@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML5 Guide</title>
+</head>
+<body>
+    <header>
+        <h1>Basic HTML5 Guide</h1>
+    </header>
+    
+    <nav>
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#versions">HTML Versions</a></li>
+            <li><a href="#structure">Document Structure</a></li>
+            <li><a href="#elements">HTML Elements</a></li>
+            <li><a href="#headings">Headings</a></li>
+            <li><a href="#html-tags">HTML Tags</a></li>
+            <li><a href="#text-formatting">Text Formatting</a></li>
+            <li><a href="#basic-formatting-tags">Basic Formatting Tags</a></li>
+            <li><a href="#semantic">Semantic Elements</a></li>
+            <li><a href="#lists">Lists</a></li>
+            <li><a href="#links">Links</a></li>
+            <li><a href="#images">Images</a></li>
+            <li><a href="#tables">Tables</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <article id="introduction">
+            <h2>Introduction to HTML</h2>
+            <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages. It was developed by Tim Berners-Lee in 1991.</p>
+            <aside>
+                <p><strong>Note:</strong> HTML describes the structure of web pages using markup elements that browsers interpret to display content.</p>
+            </aside>
+        </article>
+        
+        <hr>
+        
+        <article id="versions">
+            <h2>HTML Versions</h2>
+            <table border="1">
+                <tr>
+                    <th>Version</th>
+                    <th>Year</th>
+                    <th>Significance</th>
+                </tr>
+                <tr>
+                    <td>HTML 1.0</td>
+                    <td>1993</td>
+                    <td>The first public version</td>
+                </tr>
+                <tr>
+                    <td>HTML 2.0</td>
+                    <td>1995</td>
+                    <td>Standardized by IETF</td>
+                </tr>
+                <tr>
+                    <td>HTML 3.2</td>
+                    <td>1997</td>
+                    <td>W3C recommendation</td>
+                </tr>
+                <tr>
+                    <td>HTML 4.01</td>
+                    <td>1999</td>
+                    <td>Strict, Transitional, Frameset</td>
+                </tr>
+                <tr>
+                    <td>XHTML 1.0</td>
+                    <td>2000</td>
+                    <td>XML-based HTML</td>
+                </tr>
+                <tr>
+                    <td>HTML5</td>
+                    <td>2014</td>
+                    <td>Current standard with new semantic elements</td>
+                </tr>
+            </table>
+        </article>
+        
+        <hr>
+        
+        <article id="structure">
+            <h2>Basic HTML Document Structure</h2>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Content goes here --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            
+            <h3>Key Elements:</h3>
+            <ul>
+                <li><code>&lt;!DOCTYPE html&gt;</code> - Declares HTML5 document type</li>
+                <li><code>&lt;html&gt;</code> - Root element</li>
+                <li><code>&lt;head&gt;</code> - Contains meta information</li>
+                <li><code>&lt;title&gt;</code> - Specifies page title</li>
+                <li><code>&lt;body&gt;</code> - Contains visible content</li>
+            </ul>
+        </article>
+        
+        <hr>
+        
+        <article id="elements">
+            <h2>HTML Elements</h2>
+            
+            <h3>1. Container Elements</h3>
+            <p>Elements with both opening and closing tags:</p>
+            <ul>
+                <li><code>&lt;p&gt;Paragraph&lt;/p&gt;</code></li>
+                <li><code>&lt;div&gt;Division&lt;/div&gt;</code></li>
+                <li><code>&lt;span&gt;Inline span&lt;/span&gt;</code></li>
+            </ul>
+            
+            <h3>2. Void Elements</h3>
+            <p>Self-closing elements with no content:</p>
+            <ul>
+                <li><code>&lt;br&gt;</code> - Line break</li>
+                <li><code>&lt;img&gt;</code> - Image</li>
+                <li><code>&lt;input&gt;</code> - Form input</li>
+            </ul>
+        </article>
+        
+        <hr>
+        
+        <article id="headings">
+            <h2>Headings</h2>
+            <p>HTML provides six levels of headings:</p>
+
+            &lt;h1&gt;Heading Level 1&lt;/h1&gt;
+            &lt;h2&gt;Heading Level 2&lt;/h2&gt;
+            &lt;h3&gt;Heading Level 3&lt;/h3&gt;
+            &lt;h4&gt;Heading Level 4&lt;/h4&gt;
+            &lt;h5&gt;Heading Level 5&lt;/h5&gt;
+            &lt;h6&gt;Heading Level 6&lt;/h6&gt;
+
+            <aside>
+                <p><strong>Best Practice:</strong> Use headings hierarchically (h1 → h2 → h3) for document structure and SEO.</p>
+            </aside>
+        </article>
+        <hr>
+
+        <article id="html-tags">
+        <h2>HTML Tags and Their Explanation</h2>
+            <ul>
+                <li><strong>&lt;!DOCTYPE html&gt;</strong> - Declares the document type and HTML version</li>
+                <li><strong>&lt;meta charset="utf-8"&gt;</strong> - Specifies the character encoding for the document</li>
+                <li><strong>&lt;html&gt;...&lt;/html&gt;</strong> - The root element of an HTML page</li>
+                <li><strong>&lt;head&gt;...&lt;/head&gt;</strong> - Contains meta-information about the document</li>
+                <li><strong>&lt;title&gt;...&lt;/title&gt;</strong> - Specifies a title for the document</li>
+                <li><strong>&lt;body&gt;...&lt;/body&gt;</strong> - Contains the visible page content</li>
+            </ul>
+        </article>
+        <hr>
+        
+        <article id="text-formatting">
+            <h2>Text Formatting</h2>
+            
+            <table border="1">
+                <tr>
+                    <th>Tag</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+                <tr>
+                    <td><code>&lt;b&gt;</code></td>
+                    <td>Bold text</td>
+                    <td><b>Bold</b></td>
+                </tr>
+                <tr>
+                    <td><code>&lt;i&gt;</code></td>
+                    <td>Italic text</td>
+                    <td><i>Italic</i></td>
+                </tr>
+                <tr>
+                    <td><code>&lt;u&gt;</code></td>
+                    <td>Underlined text</td>
+                    <td><u>Underlined</u></td>
+                </tr>
+                <tr>
+                    <td><code>&lt;em&gt;</code></td>
+                    <td>Emphasized text</td>
+                    <td><em>Emphasized</em></td>
+                </tr>
+                <tr>
+                    <td><code>&lt;mark&gt;</code></td>
+                    <td>Highlighted text</td>
+                    <td><mark>Highlighted</mark></td>
+                </tr>
+                <tr>
+                    <td><code>&lt;small&gt;</code></td>
+                    <td>Smaller text</td>
+                    <td><small>Small</small></td>
+                </tr>
+                <tr>
+                    <td><code>&lt;sub&gt;</code></td>
+                    <td>Subscript</td>
+                    <td>H<sub>2</sub>O</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;sup&gt;</code></td>
+                    <td>Superscript</td>
+                    <td>x<sup>2</sup></td>
+                </tr>
+            </table>
+            <p><strong>Note:</strong> While <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code> still work, HTML5 recommends using <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code> for semantic meaning.</p>
+        </article>
+
+        <hr>
+
+        <article id="basic-formatting-tags">
+            <h2>Basic Formatting Tags</h2>
+            <table border="1">
+                <tr>
+                    <th>Tag</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><code>&lt;br&gt;</code></td>
+                    <td>Line break (empty/void element)</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;p&gt;...&lt;/p&gt;</code></td>
+                    <td>Paragraph (use CSS for alignment instead of align attribute)</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;hr&gt;</code></td>
+                    <td>Horizontal rule (empty/void element)</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;!-- --&gt;</code></td>
+                    <td>HTML comment (not displayed in browser)</td>
+                </tr>
+                <tr>
+                    <td>size</td>
+                    <td>Height in pixels (deprecated in HTML5 - use CSS instead)</td>
+                </tr>
+                <tr>
+                    <td>color</td>
+                    <td>Color of the line (deprecated in HTML5 - use CSS instead)</td>
+                </tr>
+                <tr>
+                    <td>width</td>
+                    <td>Width in pixels or percentage (deprecated in HTML5 - use CSS instead)</td>
+                </tr>
+                <tr>
+                    <td>noshade</td>
+                    <td>Specifies a solid line (deprecated in HTML5 - use CSS instead)</td>
+                </tr>
+            </table>
+        </article>
+        
+        <hr>
+            <article id="semantic">
+            <h2>HTML5 Semantic Elements</h2>
+            
+            <table border="1">
+                <tr>
+                    <th>Element</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><code>&lt;header&gt;</code></td>
+                    <td>Introductory content</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;nav&gt;</code></td>
+                    <td>Navigation links</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;main&gt;</code></td>
+                    <td>Main content</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;article&gt;</code></td>
+                    <td>Independent content</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;section&gt;</code></td>
+                    <td>Thematic grouping</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;aside&gt;</code></td>
+                    <td>Sidebar content</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;footer&gt;</code></td>
+                    <td>Footer content</td>
+                </tr>
+            </table>
+            
+            <aside>
+                <p><strong>Tip:</strong> Semantic elements improve accessibility and SEO by clearly defining content structure.</p>
+            </aside>
+        </article>
+    
+        <hr>
+        
+        <article id="lists">
+            <h2>Lists</h2>
+            
+            <h3>1. Ordered List</h3>
+            <pre><code>&lt;ol&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+            
+            <h3>2. Unordered List</h3>
+            <pre><code>&lt;ul&gt;
+    &lt;li&gt;Item&lt;/li&gt;
+    &lt;li&gt;Another item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            
+            <h3>3. Description List</h3>
+            <pre><code>&lt;dl&gt;
+    &lt;dt&gt;Term&lt;/dt&gt;
+    &lt;dd&gt;Definition&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+        </article>
+        
+        <hr>
+        
+        <article id="links">
+            <h2>Links</h2>
+            
+            <pre><code>&lt;a href="https://www.example.com" target="_blank" title="Example Link"&gt;Click here&lt;/a&gt;</code></pre>
+            <h2>Linking in HTML:</h2>
+            <p>Here are three examples of hyperlinks:</p>
+            
+            <h3>Example 1: Basic Link</h3>
+            <a href="https://www.google.com">Visit Google</a>
+            
+            <h3>Example 2: Link Opening in New Tab</h3>
+            <a href="https://www.wikipedia.org" target="_blank">Visit Wikipedia (opens in new tab)</a>
+            
+            <h3>Example 3: Email Link</h3>
+            <a href="mailto:example@example.com">Send us an email</a>
+            
+            <table border="1">
+                <tr>
+                    <th>Attribute</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>href</td>
+                    <td>URL destination</td>
+                </tr>
+                <tr>
+                    <td>target</td>
+                    <td>Where to open (_blank, _self)</td>
+                </tr>
+                <tr>
+                    <td>title</td>
+                    <td>Tooltip text</td>
+                </tr>
+            </table>
+        </article>
+        
+        <hr>
+        
+        <article id="images">
+            <h2>Images</h2>
+            
+            <pre><code>&lt;img src="image.jpg" alt="Description of image" width="300" height="200"&gt;</code></pre>
+            <h3>Example 1: Basic Image</h3>
+            <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Example of Italian houses" width="300">
+            
+            <h3>Example 2: Image with Height</h3>
+            <img src="https://www.w3schools.com/html/img_girl.jpg" alt="Girl in a jacket" width="300" height="400">
+            
+            <h3>Example 3: Aligned Image</h3>
+            <img src="https://www.w3schools.com/html/img_chania.jpg" alt="Beautiful city view" width="300" >
+
+
+            <table border="1">
+                <tr>
+                    <th>Attribute</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>src</td>
+                    <td>Image source path</td>
+                </tr>
+                <tr>
+                    <td>alt</td>
+                    <td>Alternative text (required)</td>
+                </tr>
+                <tr>
+                    <td>width/height</td>
+                    <td>Dimensions in pixels</td>
+                </tr>
+            </table>
+
+            <aside>
+                <p><strong>Accessibility:</strong> Always provide meaningful alt text for images.</p>
+            </aside>
+        </article>
+        
+        <hr>
+        
+        <article id="tables">
+            <h2>Tables</h2>
+            
+            <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Data 1&lt;/td&gt;
+        &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+            
+            <h3>Table Elements:</h3>
+            <ul>
+                <li><code>&lt;table&gt;</code> - Defines the table</li>
+                <li><code>&lt;tr&gt;</code> - Table row</li>
+                <li><code>&lt;th&gt;</code> - Table header</li>
+                <li><code>&lt;td&gt;</code> - Table data cell</li>
+                <li><code>&lt;caption&gt;</code> - Table caption</li>
+            </ul>
+        </article>
+        
+        <hr>
+</main>
+
+    <footer>
+        <p>&copy; 2025 Complete HTML5 Guide</p>
+    </footer>
+</body>
+</html>
